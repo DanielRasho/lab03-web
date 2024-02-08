@@ -1,6 +1,9 @@
 @import './reset.css';
 @import './colors.css';
 
+* {
+    scroll-behavior: smooth;
+}
 
 body {
     color: var(--black);
@@ -12,7 +15,41 @@ body {
 header {
     width: 100vw;
     height: 100vh;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
 }
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 7rem;
+}
+
+.header-face {
+    font-size: 12rem;
+}
+
+article {
+    width: 100wh;
+    height: 90vh;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+article img {
+    width: 40vw;
+    max-width: 40vh;
+}
+
+.article-text {
+    width: 40vw;
+}
+
 
 footer {
     background-color: rgb(57, 51, 48);
@@ -20,6 +57,25 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#footer {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+a:visited, a:hover, a:active{
+    text-decoration: none;
+}
+
+img {
+    border-radius: 15px;
 }
 
 footer a * {
@@ -29,4 +85,38 @@ footer a * {
 
 footer a span {
     margin-right: 2ch;
+}
+
+footer a i {
+    font-size: 2rem;
+}
+
+.scroll-down {
+   background-color: rgb(143, 128, 116); 
+   padding: 2rem;
+   border-radius: 100%;
+   position: absolute;
+   bottom: -1rem;
+   transition: background-color 0.2s ease-in;
+}
+.scroll-down:hover {
+   background-color: rgba(143, 128, 116, 0.629); 
+}
+.scroll-down {
+    color: black;
+}
+.button {
+    padding: 1rem;
+    max-width: 30ch;
+    text-align: center;
+    background-color: rgba(143, 128, 116, 0.629);
+    border-radius: 10px;
+    transition: background-color ease-in 0.2s, color ease-in 0.2s;
+    text-decoration: none;
+    color: black;
+    margin-top: 2rem;
+}
+.button:hover{
+    background-color: rgb(47, 41, 36);
+    color: white;
 }
